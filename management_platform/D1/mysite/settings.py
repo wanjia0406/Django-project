@@ -78,14 +78,14 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-DATABASES = {
+DATABASES = DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'practice',  # 必须是MySQL中已存在的库名
-        'USER': 'root',         # 你的MySQL用户名
-        'PASSWORD': '123456',  # 无密码则留空''，不要删参数
-        'HOST': '127.0.0.1',    # 比localhost更稳定，避免解析问题
-        'PORT': '3306',
+        'NAME': '',  # 必须是MySQL中已存在的库名
+        'USER': '',         # 你的MySQL用户名
+        'PASSWORD': '',  # 无密码则留空''，不要删参数
+        'HOST': '',   
+        'PORT': '',
         'OPTIONS': {'charset': 'utf8mb4'},
     }
 }
